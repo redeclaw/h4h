@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3575888967118659436
+--- !u!1 &1652558116365550057
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7035760544360628532}
-  - component: {fileID: 1342866379838889756}
-  - component: {fileID: 5633712338613765589}
-  - component: {fileID: 8171569035103218673}
+  - component: {fileID: 1652558116365550056}
+  - component: {fileID: 1652558116365550061}
+  - component: {fileID: 1652558116365550058}
+  - component: {fileID: 1652558116365550059}
   m_Layer: 5
-  m_Name: Coin
+  m_Name: Dice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7035760544360628532
+--- !u!224 &1652558116365550056
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575888967118659436}
+  m_GameObject: {fileID: 1652558116365550057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -39,21 +39,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1342866379838889756
+--- !u!222 &1652558116365550061
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575888967118659436}
+  m_GameObject: {fileID: 1652558116365550057}
   m_CullTransparentMesh: 1
---- !u!114 &5633712338613765589
+--- !u!114 &1652558116365550058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575888967118659436}
+  m_GameObject: {fileID: 1652558116365550057}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6333ca6d01f0b5541a14f9b29af68134, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f18c000b12ab9f478d21958c816c5a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -77,20 +77,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8171569035103218673
+--- !u!114 &1652558116365550059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3575888967118659436}
+  m_GameObject: {fileID: 1652558116365550057}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dc4173371feee44e9a7f09a506a52a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5801a4675d54c514789dd3e37da2268b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Faces:
-  - {fileID: 21300000, guid: 6333ca6d01f0b5541a14f9b29af68134, type: 3}
-  - {fileID: 21300000, guid: 238e46cc478270741a4666fe6fc45302, type: 3}
-  CoinImage: {fileID: 5633712338613765589}
-  NumFlips: 11
+  faces:
+  - {fileID: 21300000, guid: 6f18c000b12ab9f478d21958c816c5a7, type: 3}
+  - {fileID: 21300000, guid: afa9ef6d040de9d4abfa61336b8171d1, type: 3}
+  - {fileID: 21300000, guid: be487af34af38904e8e8a15fd144b14a, type: 3}
+  - {fileID: 21300000, guid: 06d25d2b0c2affe45a881d27d50ba641, type: 3}
+  - {fileID: 21300000, guid: 9381ee8aa37f3d14aaf69583393550de, type: 3}
+  - {fileID: 21300000, guid: 3817bae19cb0d164594d6f1e1b825188, type: 3}
+  image: {fileID: 1652558116365550058}
