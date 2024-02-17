@@ -11,7 +11,7 @@ public class mainMenu : MonoBehaviour
     }
 
     public void startSim(){
-        SceneManager.LoadScene("simScene");
+        SceneManager.LoadScene(1);
     }
 }
 
