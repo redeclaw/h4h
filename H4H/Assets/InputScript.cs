@@ -42,33 +42,43 @@ public class InputScript : MonoBehaviour
             //DisplayReactionToInput();
     }
     public void setPowerBall1(){
+        inputText = powerBall1.ToString();
         text.text = powerBall1.ToString();
     }
     public void setRoyalFlush(){
+        inputText = royalFlush.ToString();
         text.text = royalFlush.ToString();
     }
     public void setStraightFlush(){
+        inputText = straightFlush.ToString();
         text.text = straightFlush.ToString();
     }
     public void setFourKind(){
+        inputText = fourKind.ToString();
         text.text = fourKind.ToString();
     }
     public void setFullHouse(){
+        inputText = fullHouse.ToString();
         text.text = fullHouse.ToString();
     }
     public void setLightning(){
+        inputText = lightning.ToString();
         text.text = lightning.ToString();
     }
     public void setGenshinFive(){
+        inputText = genshinFive.ToString();
         text.text = genshinFive.ToString();
     }
     public void setAirCrash(){
+        inputText = airCrash.ToString();
         text.text = airCrash.ToString();
     }
     public void setMeteorite(){
+        inputText = meteorite.ToString();
         text.text = meteorite.ToString();
     }
     public void setSharkAttack(){
+        inputText = sharkAttack.ToString();
         text.text = sharkAttack.ToString();
     }
 /*
