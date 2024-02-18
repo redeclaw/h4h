@@ -11,7 +11,7 @@ public class InputScript : MonoBehaviour
     public int airCrash = 205552;
 
     //gambling
-    public int powerBall1 = 292000000;
+    public string powerBall1 = "292000000";
     public int powerBall2 = 11688053;
     public int powerball3 = 913129;
 
@@ -25,7 +25,7 @@ public class InputScript : MonoBehaviour
     public int genshinFive = 167;
 
     public InputField numberInputField;
-    private int enteredNumber;
+    private string enteredNumber;
 
         [Header("The value we got from the input field")]
         public string inputText;
@@ -37,6 +37,9 @@ public class InputScript : MonoBehaviour
     public void GrapFromInputField(string input){
             inputText = input;
             //DisplayReactionToInput();
+    }
+    public void setPowerBall1(){
+        inputText = powerBall1;
     }
 /*
     private void DisplayReactionToInput(){
