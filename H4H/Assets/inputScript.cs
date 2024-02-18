@@ -6,6 +6,24 @@ using TMPro;
 
 public class InputScript : MonoBehaviour
 {
+    //fears
+    public int lightning = 114195;
+    public int airCrash = 205552;
+
+    //gambling
+    public int powerBall1 = 292000000;
+    public int powerBall2 = 11688053;
+    public int powerball3 = 913129;
+
+    public int royalFlush = 649739;
+    public int straightFlush = 72193;
+    public int fourKind = 4164;
+    public int fullHouse = 693;
+    public int flush = 508;
+    public int straight = 253;
+
+    public int genshinFive = 167;
+
     public InputField numberInputField;
     private int enteredNumber;
 
