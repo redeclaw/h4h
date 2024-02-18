@@ -4,12 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 public class ChanceManager : MonoBehaviour
 {
-    public enum ChanceType{
-        coin,
-        dice,
-        roulette
-    }
-    public ChanceType chanceType;
+
+    public RepresentationSelector.RepType repType;
+    public SelectManager selectManager;
     public GameObject coin;
     public GameObject dice;
     public GameObject roulette;
@@ -20,13 +17,16 @@ public class ChanceManager : MonoBehaviour
 
     // Start is called before the first frame update
     public void Start(){
-
+        selectManager = GameObject.Find("SelectManager").GetComponent<SelectManager>();
+        probability = selectManager.probability;
+        repType = selectManager.repType;
+        StartSim();
     }
 
     public void StartSim()
     {
-        switch (chanceType){
-            case ChanceType.coin:
+        switch (repType){
+            case RepresentationSelector.RepType.coin:
                 int numCoins = (int)Math.Ceiling(Math.Log(probability, 2));
                 for (int i = 0; i < numCoins; i++){
                     GameObject newCoin = Instantiate(coin, new Vector2(0, 0), Quaternion.identity);
@@ -36,7 +36,7 @@ public class ChanceManager : MonoBehaviour
                 }
                 
                 break;
-            case ChanceType.dice:
+            case RepresentationSelector.RepType.dice:
                 int numDice = (int)Math.Ceiling(Math.Log(probability, 6));
                 for (int i = 0; i < numDice; i++){
                     GameObject newDice = Instantiate(dice, new Vector2(0, 0), Quaternion.identity);
