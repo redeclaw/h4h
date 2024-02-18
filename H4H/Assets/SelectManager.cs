@@ -36,11 +36,6 @@ public class SelectManager : MonoBehaviour
     public static void Simulate(){
         instance.repType = instance.representationSelector.repType;
         instance.probability = int.Parse(instance.inputScript.inputText);
-<<<<<<< Updated upstream
-        SceneManager.LoadScene(3);
-        //instance.probability = instance.inputScript.
-=======
         SceneManager.LoadScene(2);
->>>>>>> Stashed changes
     }
 }
