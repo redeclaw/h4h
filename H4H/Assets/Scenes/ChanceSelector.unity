@@ -430,6 +430,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 854105873}
     m_Modifications:
+    - target: {fileID: 8270007962679658837, guid: 921800b425fd17e4f8e901bbe9f3dc08, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1469004613}
     - target: {fileID: 8496165827696557698, guid: 921800b425fd17e4f8e901bbe9f3dc08, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -523,11 +527,6 @@ PrefabInstance:
 --- !u!224 &365636671 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8496165827696557698, guid: 921800b425fd17e4f8e901bbe9f3dc08, type: 3}
-  m_PrefabInstance: {fileID: 365636670}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &365636672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8270007962679658839, guid: 921800b425fd17e4f8e901bbe9f3dc08, type: 3}
   m_PrefabInstance: {fileID: 365636670}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &556549743
@@ -1081,10 +1080,21 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8270007962679658837, guid: 921800b425fd17e4f8e901bbe9f3dc08, type: 3}
   m_PrefabInstance: {fileID: 365636670}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365636672}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d12b087c2b08964a892d0de102cfc70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1469004613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8270007962679658834, guid: 921800b425fd17e4f8e901bbe9f3dc08, type: 3}
+  m_PrefabInstance: {fileID: 365636670}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1609126751
@@ -1423,13 +1433,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 365636672}
-        m_TargetAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
-        m_MethodName: 
-        m_Mode: 2
+      - m_Target: {fileID: 1469004612}
+        m_TargetAssemblyTypeName: InputScript, Assembly-CSharp
+        m_MethodName: setPowerBall1
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: TMPro.TMP_FontAsset, Unity.TextMeshPro
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

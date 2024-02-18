@@ -11,7 +11,7 @@ public class InputScript : MonoBehaviour
     public int airCrash = 205552;
 
     //gambling
-    public string powerBall1 = "292000000";
+    public int powerBall1 = 292000000;
     public int powerBall2 = 11688053;
     public int powerball3 = 913129;
 
@@ -23,9 +23,9 @@ public class InputScript : MonoBehaviour
     public int straight = 253;
 
     public int genshinFive = 167;
-
     public InputField numberInputField;
     private string enteredNumber;
+    public TMP_InputField text;
 
         [Header("The value we got from the input field")]
         public string inputText;
@@ -39,7 +39,10 @@ public class InputScript : MonoBehaviour
             //DisplayReactionToInput();
     }
     public void setPowerBall1(){
-        inputText = powerBall1;
+        Debug.Log("a");
+        inputText = powerBall1.ToString();
+        text.text = powerBall1.ToString();
+        //inputText = powerBall1;
     }
 /*
     private void DisplayReactionToInput(){
