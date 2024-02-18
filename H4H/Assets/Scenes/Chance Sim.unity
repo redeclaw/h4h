@@ -354,7 +354,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 60, y: 60}
+  m_CellSize: {x: 200, y: 200}
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 0
   m_ConstraintCount: 2
@@ -501,7 +501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd57e3cbcf9967145b332c71e9716e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceType: 1
+  repType: 0
+  selectManager: {fileID: 0}
   coin: {fileID: 3575888967118659436, guid: dbf40796d79abed458309714403ba3a3, type: 3}
   dice: {fileID: 1652558116365550057, guid: 84e8b9e20c8c70e418edf88a7590a09f, type: 3}
   roulette: {fileID: 0}
