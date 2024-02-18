@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelectManager : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class SelectManager : MonoBehaviour
     }
     public static void Simulate(){
         instance.repType = instance.representationSelector.repType;
+        instance.probability = int.Parse(instance.inputScript.inputText);
+        SceneManager.LoadScene(3);
         //instance.probability = instance.inputScript.
     }
 }

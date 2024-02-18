@@ -28,7 +28,7 @@ public class InputScript : MonoBehaviour
     private int enteredNumber;
 
         [Header("The value we got from the input field")]
-        [SerializeField] private string inputText;
+        public string inputText;
 
         [Header("Showing the reaction to the player")]
         [SerializeField] private GameObject reactionGroup;
