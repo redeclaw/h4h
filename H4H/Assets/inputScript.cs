@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class inputScript : MonoBehaviour
+public class InputScript : MonoBehaviour
 {
     public InputField numberInputField;
     private int enteredNumber;
