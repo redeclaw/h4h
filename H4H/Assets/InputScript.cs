@@ -7,8 +7,11 @@ using TMPro;
 public class InputScript : MonoBehaviour
 {
     //fears
-    public int lightning = 114195;
-    public int airCrash = 205552;
+    public int lightning = 9000000;
+    public int airCrash = 11000000;
+    public int meteorite = 840000000;
+    public int sharkAttack = 3700000;
+
 
     //gambling
     public int powerBall1 = 292000000;
@@ -39,10 +42,34 @@ public class InputScript : MonoBehaviour
             //DisplayReactionToInput();
     }
     public void setPowerBall1(){
-        Debug.Log("a");
-        inputText = powerBall1.ToString();
         text.text = powerBall1.ToString();
-        //inputText = powerBall1;
+    }
+    public void setRoyalFlush(){
+        text.text = royalFlush.ToString();
+    }
+    public void setStraightFlush(){
+        text.text = straightFlush.ToString();
+    }
+    public void setFourKind(){
+        text.text = fourKind.ToString();
+    }
+    public void setFullHouse(){
+        text.text = fullHouse.ToString();
+    }
+    public void setLightning(){
+        text.text = lightning.ToString();
+    }
+    public void setGenshinFive(){
+        text.text = genshinFive.ToString();
+    }
+    public void setAirCrash(){
+        text.text = airCrash.ToString();
+    }
+    public void setMeteorite(){
+        text.text = meteorite.ToString();
+    }
+    public void setSharkAttack(){
+        text.text = sharkAttack.ToString();
     }
 /*
     private void DisplayReactionToInput(){
