@@ -32,6 +32,7 @@ public class SelectManager : MonoBehaviour
         
     }
     public static void Simulate(){
-        
+        instance.repType = instance.representationSelector.repType;
+        //instance.probability = instance.inputScript.
     }
 }

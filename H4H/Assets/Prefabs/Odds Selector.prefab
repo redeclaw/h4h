@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8496165826954681376}
   - component: {fileID: 8496165826954681377}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Display Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 0, y: 50}
+  m_AnchoredPosition: {x: 0, y: -150}
+  m_SizeDelta: {x: 0, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8496165826954681376
 CanvasRenderer:
@@ -93,15 +93,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -220,9 +220,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8496165827696557698}
     m_Modifications:
+    - target: {fileID: 435664035, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 435664035, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 435664036, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
+      propertyPath: m_fontSize
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 435664036, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 76
+      objectReference: {fileID: 0}
+    - target: {fileID: 516939388777129260, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 516939389371366748, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 516939389371366748, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_margin.x
@@ -234,7 +254,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 516939389371366748, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_fontSizeMax
-      value: 30
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 516939389371366748, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 516939389951996141, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_Name
@@ -270,11 +294,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 516939389951996142, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 120
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 516939389951996142, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 516939389951996142, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -326,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 516939389975832154, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_fontSize
-      value: 9.35
+      value: 54.45
       objectReference: {fileID: 0}
     - target: {fileID: 516939389975832154, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_margin.w
@@ -334,11 +358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 516939389975832154, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_margin.x
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 516939389975832154, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
       propertyPath: m_margin.z
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e65d22e9c75b54e981c04a4f1537c2, type: 3}
