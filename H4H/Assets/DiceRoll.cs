@@ -8,20 +8,22 @@ public class DiceRoll : MonoBehaviour
     public Sprite[] faces;
     public Image image;
     // Start is called before the first frame update
-    void Start()
+    void Start(){
+        Try();
+    }
+    public void Try()
     {
         StartCoroutine(StartRoll());
-        
     }
 
     IEnumerator StartRoll(){
         int numRolls = Random.Range(10, 35);
         for (int i = 0; i < numRolls; i++){
-            int diceRoll = UnityEngine.Random.Range(0, 5);
+            int diceRoll = UnityEngine.Random.Range(0, 6);
             image.sprite = faces[diceRoll];
             yield return new WaitForSeconds(0.1f);
         }
-        image.sprite = faces[5];
+        //image.sprite = faces[5];
         yield return null;
     }
 

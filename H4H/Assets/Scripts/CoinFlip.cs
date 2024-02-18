@@ -10,6 +10,10 @@ public class CoinFlip : MonoBehaviour
     public Image CoinImage;
     public int NumFlips = 11;
     void Start(){
+        Try();
+    }
+    public void Try(){
+        NumFlips = UnityEngine.Random.Range(6, 16);
         StartCoroutine(FlipCoin(.005f, 1, NumFlips));
     }
     public IEnumerator FlipCoin(float duration, float size, int NumFlips){
