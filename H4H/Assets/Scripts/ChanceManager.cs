@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class ChanceManager : MonoBehaviour
 {
     public TextMeshProUGUI displayText;
@@ -50,6 +51,10 @@ public class ChanceManager : MonoBehaviour
 
     public void Retry(){
         table.BroadcastMessage("Try");
+    }
+
+    public void Back(){
+        SceneManager.LoadScene(1);
     }
 
     // Update is called once per frame

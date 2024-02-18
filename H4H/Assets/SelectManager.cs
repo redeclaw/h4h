@@ -34,8 +34,8 @@ public class SelectManager : MonoBehaviour
         
     }
     public static void Simulate(){
-        instance.repType = instance.representationSelector.repType;
-        instance.probability = int.Parse(instance.inputScript.inputText);
+        instance.repType = GameObject.Find("Representation Selector").GetComponent<RepresentationSelector>().repType;
+        instance.probability = int.Parse(GameObject.Find("Input Field").GetComponent<InputScript>().inputText);
         SceneManager.LoadScene(2);
     }
 }
